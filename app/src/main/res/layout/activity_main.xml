@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/fengjing1">
+
+        <com.example.calculator.my_control.MyTextView
+            android:id="@+id/myTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textAlignment="textEnd"
+            android:textSize="55sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline9"
+            app:layout_constraintVertical_bias="0.87" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="395dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="731dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="150dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="70dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/myTextView"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="@+id/guideline7" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="352dp"
+            android:layout_height="465dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/myTextView">
+
+            <Button
+                android:id="@+id/buttonFanZhuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/FanZhuan"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="1"
+                app:layout_row="4"
+                app:strokeColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonGenHao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GenHao"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="2"
+                app:layout_row="4"
+                app:strokeColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonClean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clean"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="0"
+                app:layout_row="3" />
+
+            <Button
+                android:id="@+id/buttonPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="2"
+                app:layout_row="3" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_9"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="2"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/buttonCheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chenghao"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="3"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="1"
+                app:layout_row="3" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_7"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:strokeColor="@color/white" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_5"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/buttonChu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chuhao"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="3"
+                app:layout_row="3" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_6"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/buttonJia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jia"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="3"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_8"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/buttonJiSuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dengyuhao"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="3"
+                app:layout_row="4" />
+
+            <Button
+                android:id="@+id/buttonJian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jian"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="3"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <ImageButton
+                android:id="@+id/imageButtonTuiGe"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:contentDescription="TODO"
+                app:layout_column="0"
+                app:layout_row="4"
+                app:srcCompat="@drawable/baseline_backspace_24" />
+
+        </androidx.gridlayout.widget.GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
